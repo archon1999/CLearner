@@ -1,8 +1,8 @@
 import os
 import random
 import tkinter
-from tkinter import font, END, Toplevel, Frame, Menu, CENTER, NO, messagebox, LEFT
-from tkinter.ttk import Treeview
+from tkinter import font, END, Toplevel, Frame, Menu, CENTER, NO, messagebox
+from tkinter.ttk import Treeview, Style
 from functools import partial
 
 from tk_html_widgets import HTMLLabel
@@ -621,8 +621,6 @@ class Window(Frame):
         info_label2 = HTMLLabel(html='<b>Троицк, 2022</b>',
                                 background=MAIN_COLOR)
         info_label2.place(x=340, y=520)
-        
-        info_label2.config(fontsize='50')
 
         self.widgets.append(label)
         # self.widgets.append(lessons_button)
